@@ -9,31 +9,53 @@
   </head>
   <header>
     <nav
-      class="bg-secondary flex items-center justify-between overflow-clip px-5 py-2"
+      class="bg-secondary sticky flex items-center justify-between px-5 py-2"
     >
       <!-- Logo -->
       <div class="z-10">
-        <h3 class=""><a href="#">LOGO</a></h3>
+        <h3 class="">
+          <a class="hover:text-six transition" href="#">LOGO</a>
+        </h3>
       </div>
       <!-- Burger menu streger -->
-      <div id="hamburger" class="hamburger z-10">
-        <div class="bar my-1 h-1 w-8 bg-white"></div>
-        <div class="bar my-1 h-1 w-8 bg-white"></div>
-        <div class="bar my-1 h-1 w-8 bg-white"></div>
+      <div id="hamburger" class="hamburger group z-10">
+        <div
+          class="bar group-hover:bg-six my-1 h-1 w-8 bg-white transition"
+        ></div>
+        <div
+          class="bar group-hover:bg-six my-1 h-1 w-8 bg-white transition"
+        ></div>
+        <div
+          class="bar group-hover:bg-six my-1 h-1 w-8 bg-white transition"
+        ></div>
       </div>
       <!-- Burger links -->
       <div
         id="burger-content"
-        class="burger-content bg-secondary absolute top-0 left-full flex h-full w-full flex-col items-center justify-center text-center transition ease-in"
+        class="burger-content bg-secondary fixed top-0 left-full flex h-full w-full flex-col items-center justify-center overflow-hidden text-center transition-all"
       >
         <ul class="py-20 px-10">
-          <li class="py-5"><a href="#">LOKALERNER</a></li>
+          <li class="py-5">
+            <a class="hover:bg-six w-80 py-4 px-8 transition" href="#"
+              >LOKALERNER</a
+            >
+          </li>
 
-          <li class="py-5"><a href="#">KONTAKT</a></li>
+          <li class="py-5">
+            <a class="hover:bg-six w-80 py-4 px-8 transition" href="#"
+              >KONTAKT</a
+            >
+          </li>
 
-          <li class="py-5"><a href="#">FAQ</a></li>
+          <li class="py-5">
+            <a class="hover:bg-six w-80 py-4 px-8 transition" href="#">FAQ</a>
+          </li>
 
-          <li class="py-5"><a href="#">LOG IND</a></li>
+          <li class="py-5">
+            <a class="hover:bg-six w-80 py-4 px-8 transition" href="#"
+              >LOG IND</a
+            >
+          </li>
         </ul>
       </div>
     </nav>
