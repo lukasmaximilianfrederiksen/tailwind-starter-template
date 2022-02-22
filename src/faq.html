@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="valentine">
+<html lang="en" data-theme="">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,26 +8,34 @@
     <link rel="stylesheet" href="tailwind.css" />
   </head>
   <header>
-    <a class="text-2xl" href="index.html">Forside</a>
+    <nav class="flex justify-between overflow-clip bg-red-500 px-5 py-2">
+      <!-- Logo -->
+      <div>
+        <h1><a href="#">LOGO</a></h1>
+      </div>
+      <!-- Burger menu streger -->
+      <div id="hamburger" class="hamburger z-10">
+        <div class="my-2 h-1 w-8 bg-white"></div>
+        <div class="my-2 h-1 w-8 bg-white"></div>
+        <div class="my-2 h-1 w-8 bg-white"></div>
+      </div>
+      <!-- Burger links -->
+      <div
+        id="burger-content"
+        class="burger-content absolute top-0 left-full flex h-full w-full flex-col items-center justify-center bg-red-500 transition ease-in"
+      >
+        <ul class="py-20 px-10">
+          <li><a href="#">Lokalerne</a></li>
 
-    <a class="text-2xl" href="lokaler.html">Book lokaler</a>
-    <a class="text-2xl" href="lille_lokale.html">lille_lokale</a>
-    <a class="text-2xl" href="mellem_lokale.html">mellem_lokaler</a>
-    <a class="text-2xl" href="storLokale.html">stor_lokaler</a>
-    <a class="text-2xl" href="kontakt.html">kontakt</a>
-    <a class="text-2xl" href="faq.html">faq</a>
+          <li><a href="#">Lokalerne</a></li>
+
+          <li><a href="#">Lokalerne</a></li>
+        </ul>
+      </div>
+    </nav>
   </header>
 
   <body>
-    <div class="card bg-primary text-primary-content file: w-96">
-      <div class="card-body">
-        <h2 class="card-title">Card title!</h2>
-        <p>If a dog chews shoes whose shoes does he choose?</p>
-        <div class="card-actions justify-end">
-          <button class="btn">Buy Now</button>
-        </div>
-      </div>
-    </div>
     <script type="module" src="index.js"></script>
   </body>
 </html>
