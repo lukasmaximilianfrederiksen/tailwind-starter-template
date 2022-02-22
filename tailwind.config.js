@@ -18,7 +18,7 @@ module.exports = {
     // rød lilla
     third: "#A32F80",
     // lilla
-    fourht: "#8E3AEB",
+    fourth: "#8E3AEB",
     // orange
     fifth: "#FF6363",
     // gul
