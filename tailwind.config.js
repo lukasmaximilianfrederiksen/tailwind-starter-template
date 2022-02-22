@@ -8,7 +8,7 @@ module.exports = {
         // mørke lilla
         primær: "#381460",
         // rød
-        secondary: "#FE346E",
+        second: "#FE346E",
         // rød lilla
         third: "#A32F80",
         // lilla
