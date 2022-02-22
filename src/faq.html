@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="valentine">
+<html lang="en" data-theme="">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,26 +8,36 @@
     <link rel="stylesheet" href="tailwind.css" />
   </head>
   <header>
-    <a class="text-2xl" href="index.html">Forside</a>
+    <nav class="bg-secondary flex justify-between overflow-clip px-5 py-2">
+      <!-- Logo -->
+      <div>
+        <h2><a href="#">LOGO</a></h2>
+      </div>
+      <!-- Burger menu streger -->
+      <div id="hamburger" class="hamburger z-10">
+        <div class="bar my-2 h-1 w-8 bg-white"></div>
+        <div class="bar my-2 h-1 w-8 bg-white"></div>
+        <div class="bar my-2 h-1 w-8 bg-white"></div>
+      </div>
+      <!-- Burger links -->
+      <div
+        id="burger-content"
+        class="burger-content bg-secondary absolute top-0 left-full flex h-full w-full flex-col items-center justify-center text-center transition ease-in"
+      >
+        <ul class="py-20 px-10">
+          <li class="py-5"><a href="#">LOKALERNER</a></li>
 
-    <a class="text-2xl" href="lokaler.html">Book lokaler</a>
-    <a class="text-2xl" href="lille_lokale.html">lille_lokale</a>
-    <a class="text-2xl" href="mellem_lokale.html">mellem_lokaler</a>
-    <a class="text-2xl" href="storLokale.html">stor_lokaler</a>
-    <a class="text-2xl" href="kontakt.html">kontakt</a>
-    <a class="text-2xl" href="faq.html">faq</a>
+          <li class="py-5"><a href="#">KONTAKT</a></li>
+
+          <li class="py-5"><a href="#">FAQ</a></li>
+
+          <li class="py-5"><a href="#">LOG IND</a></li>
+        </ul>
+      </div>
+    </nav>
   </header>
 
   <body>
-    <div class="card bg-primary text-primary-content file: w-96">
-      <div class="card-body">
-        <h2 class="card-title">Card title!</h2>
-        <p>If a dog chews shoes whose shoes does he choose?</p>
-        <div class="card-actions justify-end">
-          <button class="btn">Buy Now</button>
-        </div>
-      </div>
-    </div>
     <script type="module" src="index.js"></script>
   </body>
 </html>
