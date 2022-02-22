@@ -7,8 +7,8 @@ burger.addEventListener("click", showBurger);
 
 function showBurger() {
   console.log("Hej burger");
-  burger.classList.toggle("right-[0%]");
-  burgerContent.classList.toggle("right-[0%]");
+  burger.classList.toggle("left-0");
+  burgerContent.classList.toggle("left-0");
   burger.classList.toggle("left-full");
   burgerContent.classList.toggle("left-full");
 }
