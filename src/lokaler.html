@@ -131,7 +131,7 @@
         class="flex w-full flex-wrap items-center justify-between sm:flex-wrap md:flex-wrap"
       >
         <div
-          class="flex h-64 w-full flex-wrap justify-center rounded-t bg-white shadow dark:bg-gray-800 sm:rounded-l sm:rounded-t-none lg:w-1/3"
+          class="bg-primær flex h-64 w-full flex-wrap justify-center rounded-t shadow dark:bg-gray-800 sm:rounded-l sm:rounded-t-none lg:w-1/3"
         >
           <div>
             <h2>Lille Lokale</h2>
@@ -152,13 +152,27 @@
         </div>
 
         <div
-          class="flex h-64 w-full justify-center rounded-t bg-white shadow dark:bg-gray-800 sm:rounded-l sm:rounded-t-none lg:w-1/3"
+          class="bg-third flex h-64 w-full flex-wrap justify-center rounded-t shadow dark:bg-gray-800 sm:rounded-l sm:rounded-t-none lg:w-1/3"
         >
-          <h2>mellem lokale</h2>
+          <div>
+            <h2>Mellem lokale</h2>
+          </div>
+          <div>
+            <p>
+              De mellemstore lokaler er mellem 16 og 22m2, og er oplagt for
+              mindre rockbands med trommer - typisk tre-fire bandmedlemmer.
+            </p>
+          </div>
+          <div>
+            <p>
+              Et mellem lokale koster 500 dkk/måned for tre timer én dag om
+              ugen.
+            </p>
+          </div>
         </div>
 
         <div
-          class="flex h-64 w-full justify-center rounded-b bg-white shadow dark:bg-gray-800 sm:rounded-b-none lg:w-1/3"
+          class="bg-fourth flex h-64 w-full justify-center rounded-b shadow dark:bg-gray-800 sm:rounded-b-none lg:w-1/3"
         >
           <h2>Stort lokale</h2>
         </div>
@@ -171,7 +185,7 @@
           class="max-w-screen-x2 mx-auto justify-center overflow-hidden px-4 py-4 sm:px-6 lg:px-8"
         >
           <div
-            class="mt-2 grid justify-items-center gap-2 sm:grid-cols-3 sm:grid-rows-1 lg:grid-cols-3"
+            class="mt-2 grid justify-items-center gap-2 md:grid-cols-3 md:grid-rows-1 lg:grid-cols-3"
           >
             <div
               class="mt-2 flex flex-col justify-items-center text-center text-sm text-white"
@@ -189,9 +203,9 @@
               <p class="">Tlf: 22555512</p>
             </div>
             <div
-              class="flex flex-col space-y-2 pt-8 pb-6 text-sm text-white first-letter:mt-2 sm:col-start-3 sm:row-start-1"
+              class="flex flex-col space-y-2 pt-8 pb-6 text-sm text-white first-letter:mt-2 md:col-start-3 md:row-start-1"
             >
-              <div class="sm:col-start-3 sm:row-start-1">
+              <div class="md:col-start-3 md:row-start-1">
                 <h3 class="pb-6 font-medium">FIND OS HER</h3>
                 <p class="pb-2 pt-2">Bastionvej 2,</p>
                 <p class="">Prøvestenen, 2300</p>
@@ -199,7 +213,7 @@
               </div>
             </div>
 
-            <div class="sm:col-start-3 sm:row-start-2">
+            <div class="md:col-start-3 md:row-start-2">
               <div class="mt-2 flex flex-col text-sm">
                 <div class="m-1 sm:col-start-3">
                   <iframe
@@ -209,12 +223,13 @@
                     style="border: 0"
                     allowfullscreen=""
                     loading="lazy"
+                    class="lg:h-full lg:w-full"
                   ></iframe>
                 </div>
               </div>
             </div>
-            <div class="sm:col-start-1 sm:row-start-2">
-              <div class="m-4 flex flex-wrap justify-between pt-4">
+            <div class="md:col-start-1 md:row-start-2">
+              <div class="m-4 flex flex-row pt-4 align-bottom">
                 <img src="icons/FacebookNegative.svg" alt="" />
                 <img src="icons/InstagramNegative.svg" alt="" />
                 <img src="icons/YouTubeNegative.svg" alt="" />
