@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="tailwind.css" />
   </head>
   <header>
-    <nav class="bg-second sticky flex items-center justify-between px-5 py-2">
+    <nav
+      class="fixed flex w-full items-center justify-between px-5 py-2 transition-all duration-300 ease-out"
+    >
       <!-- Logo -->
       <div class="z-10">
         <h3 class="">
@@ -53,13 +55,13 @@
       <!-- Burger menu streger -->
       <div id="hamburger" class="hamburger group z-10">
         <div
-          class="rounden-full bar group-hover:bg-six my-1 h-1 w-8 bg-white transition"
+          class="rounden-full bar group-hover:bg-primær my-1 h-1 w-8 bg-white transition"
         ></div>
         <div
-          class="rounden-full bar group-hover:bg-six my-1 h-1 w-8 bg-white transition"
+          class="rounden-full bar group-hover:bg-primær my-1 h-1 w-8 bg-white transition"
         ></div>
         <div
-          class="rounden-full bar group-hover:bg-six my-1 h-1 w-8 bg-white transition"
+          class="rounden-full bar group-hover:bg-primær my-1 h-1 w-8 bg-white transition"
         ></div>
       </div>
       <!-- Burger links -->
@@ -103,6 +105,70 @@
       </div>
     </nav>
   </header>
+  <main>
+    <section id="section-1" class="grid h-5/6 w-full grid-cols-2">
+      <article
+        id="splash-billede"
+        style="background-image: url(../billeder/splash-billede.jpg)"
+        class="col-start-1 grid aspect-square grid-rows-3 items-center justify-center bg-cover"
+      >
+        <div id="h1-h3" class="row-start-2">
+          <h1>MUSIKLOFTET</h1>
+          <h3>Leje af lokale til bands, solister og musiklærer</h3>
+        </div>
+      </article>
+      <article id="nav-boxe-grid" class="grid grid-cols-2 grid-rows-2">
+        <a
+          class="hover:bg-primær bg-third flex items-center justify-center text-center transition-all"
+          href="lokaler.html"
+          >LOKALERNE</a
+        >
+
+        <div class="bg-six grid">
+          <img
+            class="self-center justify-self-center"
+            src="../billeder/what-do-you-want-ryan-gosling.gif"
+            alt="Guitar forstærker"
+          />
+        </div>
+
+        <a
+          class="hover:bg-primær bg-fifth flex items-center justify-center text-center transition-all"
+          href="faq.html"
+          >FAQ</a
+        >
+
+        <a
+          class="hover:bg-primær bg-fourth flex items-center justify-center text-center transition-all"
+          href="kontakt.html"
+          >KONTAKT</a
+        >
+      </article>
+    </section>
+    <section
+      id="section-2"
+      style="background-image: url(../billeder/musikloftet-bygning.jpg)"
+      class="h-5/6 w-full bg-cover px-8 py-10"
+    >
+      <h2>Om musikloftet</h2>
+      <p>
+        Musikloftet er 8 hyggelige øvelokaler på toppen af Prøvestenen i
+        København. Øvelokalerne ligger i en gammel industribygning, som huser
+        både kreative værksteder, atelierer og fotostudier.
+      </p>
+      <h3>Etableret i 2008</h3>
+      <p>
+        Øvelokalerne blev etableret i 2018 med den tanke at det skal være let at
+        finde og dele et øvelokale. De fleste bands øver kun én gang om ugen, så
+        Musikloftets mål er at gøre det let at dele sit øvelokale med andre: Vi
+        har udelukkende baggearslokaler udstyret med alt det tunge/besværlige
+        udstyr: Trommer, forstærkere og PA-anlæg. Så som band/orkester gælder
+        det bare om at tage guitaren eller bassen over skulderen, og komme fast
+        én dag om ugen. God spillelyst!
+      </p>
+    </section>
+  </main>
+  <footer></footer>
 
   <body>
     <script type="module" src="index.js"></script>
