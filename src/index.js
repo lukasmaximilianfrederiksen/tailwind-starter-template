@@ -23,6 +23,7 @@ function showBurger() {
 
 function showHeader() {
   const header = document.querySelector("nav");
-  header.classList.toggle("bg-second", window.scrollY > 0);
+  header.classList.toggle("show-nav", window.scrollY > 0);
+
   console.log("hej");
 }
