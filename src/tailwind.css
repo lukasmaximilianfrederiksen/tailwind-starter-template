@@ -17,6 +17,11 @@
     font-size: 2rem;
   }
 
+  h4 {
+    font-family: "Roboto", cursive;
+    font-size: 1.5rem;
+  }
+
   p {
     font-family: "Libre Franklin", cursive;
     font-size: 1rem;
