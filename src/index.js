@@ -1,7 +1,11 @@
 const burger = document.querySelector("nav .hamburger");
 const burgerContent = document.querySelector("nav .burger-content");
+const lydGif = document.querySelector("audio");
+const gif = document.querySelector("#rock");
 
 window.addEventListener("scroll", showHeader);
+gif.addEventListener("mouseover", spilLyd);
+gif.addEventListener("mouseleave", stopLyd);
 
 burger.addEventListener("click", showBurger);
 burgerContent.addEventListener("click", fjernBurger);
@@ -26,4 +30,13 @@ function showHeader() {
   header.classList.toggle("show-nav", window.scrollY > 0);
 
   console.log("hej");
+}
+
+function spilLyd() {
+  lydGif.play();
+  lydGif.volume = 0.2;
+}
+
+function stopLyd() {
+  lydGif.pause();
 }
