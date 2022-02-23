@@ -6,6 +6,7 @@
   h1 {
     font-family: "Roboto", cursive;
     font-size: 4rem;
+    font-weight: bold;
   }
   h2 {
     font-family: "Roboto", cursive;
@@ -20,6 +21,21 @@
     font-family: "Libre Franklin", cursive;
     font-size: 1rem;
   }
+
+  button {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}
+
+.show-nav {
+  background-color: #fe346e;
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color),
+    0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .hamburger.left-0 .bar:nth-child(2) {

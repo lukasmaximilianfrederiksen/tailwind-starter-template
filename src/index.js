@@ -1,8 +1,8 @@
 const burger = document.querySelector("nav .hamburger");
 const burgerContent = document.querySelector("nav .burger-content");
 
-//window.addEventListener("scroll", showHeader);
-//window.addEventListener("scroll", showHeaderFooter);
+window.addEventListener("scroll", showHeader);
+
 burger.addEventListener("click", showBurger);
 burgerContent.addEventListener("click", fjernBurger);
 
@@ -21,14 +21,9 @@ function showBurger() {
   burgerContent.classList.toggle("left-full");
 }
 
-/* function showHeader() {
-  const header = document.querySelector(".navbar-top");
-  header.classList.toggle("sticky", window.scrollY > 0);
+function showHeader() {
+  const header = document.querySelector("nav");
+  header.classList.toggle("show-nav", window.scrollY > 0);
+
   console.log("hej");
 }
-
-function showHeaderFooter() {
-  const headerFooter = document.querySelector(".navbar-bottom");
-  headerFooter.classList.toggle("sticky", window.scrollY > 0);
-  console.log("hej headerFooter");
-} */
