@@ -116,7 +116,10 @@
     </nav>
   </header>
   <main>
-    <section id="section-1 hero" class="grid h-5/6 w-full grid-cols-2">
+    <section
+      id="section-1 hero"
+      class="h-[96vh] w-full grid-cols-2 lg:grid lg:h-5/6"
+    >
       <article
         id="splash-billede"
         style="background-image: url(../billeder/splash-billede.jpg)"
@@ -127,7 +130,10 @@
           <h3>Leje af lokale til bands, solister og musiklærer</h3>
         </div>
       </article>
-      <article id="nav-boxe-grid" class="grid grid-cols-2 grid-rows-2">
+      <article
+        id="nav-boxe-grid"
+        class="hidden grid-cols-2 grid-rows-2 md:hidden lg:grid"
+      >
         <a
           class="hover:bg-primær bg-third flex items-center justify-center text-center transition-all"
           href="lokaler.html"
@@ -137,7 +143,7 @@
         <div class="bg-six grid">
           <img
             class="self-center justify-self-center"
-            src="../billeder/what-do-you-want-ryan-gosling.gif"
+            src="../billeder/gif/speaker.gif"
             alt="Guitar forstærker"
           />
         </div>
@@ -163,7 +169,7 @@
       <section id="wrapper" class="mx-56 flex items-center justify-evenly">
         <article
           id="billeder"
-          class="border-primær grid h-5/6 w-5/6 grid-cols-2 grid-rows-2 border-2 mix-blend-normal"
+          class="border-primær h-5/6 w-5/6 grid-cols-2 grid-rows-2 border-2 mix-blend-normal md:hidden lg:grid"
         >
           <img
             class="aspect-square object-cover"
@@ -212,7 +218,7 @@
       >
         <tr>
           <thead>
-            <th>Lille lokale</th>
+            <th><h3>Lille lokale</h3></th>
           </thead>
         </tr>
         <tr>
@@ -233,7 +239,7 @@
             <button
               class="bg-third hover:bg-six rounded-xl px-12 py-4 transition-all"
             >
-              LÆS MERE
+              <a href="lille_lokale.html">LÆS MERE</a>
             </button>
           </td>
         </tr>
@@ -243,19 +249,19 @@
       >
         <tr>
           <thead>
-            <th>Lille lokale</th>
+            <th><h3>Mellem lokale</h3></th>
           </thead>
         </tr>
         <tr>
           <td class="">
-            Det lille lokale er ca. 10m2, og er oplagt for små bands/orkestre,
-            der ikke har en trommeslager
+            De mellemstore lokaler er mellem 16 og 22m2, og er oplagt for mindre
+            rockbands med trommer - typisk tre-fire bandmedlemmer.
           </td>
         </tr>
         <tr>
           <td class="py-10">
-            Det lille lokale koster
-            <span class="font-bold">300 dkk/måned</span> for tre timer én dag om
+            Et mellem lokale koster
+            <span class="font-bold">500 dkk/måned</span> for tre timer én dag om
             ugen.
           </td>
         </tr>
@@ -264,7 +270,7 @@
             <button
               class="bg-third hover:bg-six rounded-xl px-12 py-4 transition-all"
             >
-              LÆS MERE
+              <a href="mellem_lokale.html">LÆS MERE</a>
             </button>
           </td>
         </tr>
@@ -274,19 +280,20 @@
       >
         <tr>
           <thead>
-            <th>Lille lokale</th>
+            <th><h3>Stort lokale</h3></th>
           </thead>
         </tr>
         <tr>
           <td class="">
-            Det lille lokale er ca. 10m2, og er oplagt for små bands/orkestre,
-            der ikke har en trommeslager
+            De tre store lokaler er mellem 33 og 36m2, så her er der plads til
+            det helt store funk-band, og så er der også en lille lounge-afdeling
+            til at tage en chiller.
           </td>
         </tr>
         <tr>
           <td class="py-10">
-            Det lille lokale koster
-            <span class="font-bold">300 dkk/måned</span> for tre timer én dag om
+            Det store lokale koster
+            <span class="font-bold">800 dkk/måned</span> for tre timer én dag om
             ugen.
           </td>
         </tr>
@@ -295,7 +302,7 @@
             <button
               class="bg-third hover:bg-six rounded-xl px-12 py-4 transition-all"
             >
-              LÆS MERE
+              <a href="stor_lokale.html">LÆS MERE</a>
             </button>
           </td>
         </tr>
