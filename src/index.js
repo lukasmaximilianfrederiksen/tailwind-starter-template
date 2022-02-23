@@ -1,9 +1,5 @@
 const burger = document.querySelector("nav .hamburger");
 const burgerContent = document.querySelector("nav .burger-content");
-const soundBox = document.querySelector("#rock");
-let rockLyd = getElementById("audio");
-
-soundBox.addEventListener("mouseover", rockOut);
 
 window.addEventListener("scroll", showHeader);
 
@@ -29,10 +25,5 @@ function showHeader() {
   const header = document.querySelector("nav");
   header.classList.toggle("show-nav", window.scrollY > 0);
 
-  console.log("hej");
-}
-
-function rockOut() {
-  rockLyd.play();
   console.log("hej");
 }
