@@ -1,14 +1,15 @@
 const burger = document.querySelector("nav .hamburger");
 const burgerContent = document.querySelector("nav .burger-content");
+
+window.addEventListener("scroll", showHeader);
+burger.addEventListener("click", showBurger);
+burgerContent.addEventListener("click", fjernBurger);
+
 const lydGif = document.querySelector("audio");
 const gif = document.querySelector("#rock");
 
-window.addEventListener("scroll", showHeader);
 gif.addEventListener("mouseover", spilLyd);
 gif.addEventListener("mouseleave", stopLyd);
-
-burger.addEventListener("click", showBurger);
-burgerContent.addEventListener("click", fjernBurger);
 
 function fjernBurger() {
   burger.classList.toggle("left-0");
