@@ -35,6 +35,7 @@ function showHeader() {
 
 function spilLyd() {
   lydGif.play();
+  lydGif.currentTime = 1;
   lydGif.volume = 0.1;
 }
 
