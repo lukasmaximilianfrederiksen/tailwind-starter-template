@@ -7,6 +7,8 @@ module.exports = {
       colors: {
         // mørke lilla
         primær: "#381460",
+
+        kalender: "#CCA6F6",
         // rød
         second: "#FE346E",
         // rød lilla
