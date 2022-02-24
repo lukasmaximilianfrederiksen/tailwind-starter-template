@@ -19,7 +19,7 @@
   </head>
   <header>
     <nav
-      class="fixed flex w-full items-center justify-between px-5 py-2 transition-all duration-300 ease-out"
+      class="fixed flex w-full items-center justify-between px-4 py-2 transition-all duration-300 ease-out"
     >
       <!-- Logo -->
       <div class="z-10">
@@ -118,32 +118,37 @@
   <main>
     <section
       id="section-1 hero"
-      class="w-full grid-cols-2 sm:h-full md:h-[96vh] lg:grid lg:h-5/6"
+      class="h-[96vh] w-auto grid-cols-2 lg:grid lg:h-5/6"
     >
       <article
         id="splash-billede"
         style="background-image: url(../billeder/splash-billede.jpg)"
-        class="col-start-1 grid aspect-square grid-rows-3 items-center justify-center bg-cover"
+        class="col-start-1 grid aspect-square h-full w-full grid-rows-3 items-center justify-center bg-cover sm:w-full"
       >
-        <div id="h1-h3" class="row-start-2">
+        <div id="h1-h3" class="row-start-2 mx-4">
           <h1>MUSIKLOFTET</h1>
           <h4 class="">
             <span class="text-six">Leje af øvelokaler</span> til bands, solister
             og musiklærer
           </h4>
+          <button
+            class="bg-third hover:bg-six my-6 rounded-xl px-6 py-4 transition-all lg:hidden"
+          >
+            <a href="lokaler.html">SE LOKALERNE</a>
+          </button>
         </div>
       </article>
       <article
         id="nav-boxe-grid"
-        class="hidden grid-cols-2 grid-rows-2 md:hidden lg:grid"
+        class="hidden h-full grid-cols-2 grid-rows-2 md:hidden lg:grid"
       >
         <a
-          class="hover:bg-primær bg-third flex items-center justify-center text-center transition-all"
+          class="hover:bg-primær bg-third flex aspect-square items-center justify-center text-center transition-all"
           href="lokaler.html"
           ><h3>LOKALERNE</h3></a
         >
 
-        <div id="rock" class="bg-six grid">
+        <div id="rock" class="bg-six grid aspect-square">
           <img
             class="self-center justify-self-center"
             src="../billeder/gif/speaker.gif"
@@ -152,13 +157,13 @@
         </div>
 
         <a
-          class="hover:bg-primær bg-fifth flex items-center justify-center text-center transition-all"
+          class="hover:bg-primær bg-fifth flex aspect-square items-center justify-center text-center transition-all"
           href="faq.html"
           ><h3>FAQ</h3></a
         >
 
         <a
-          class="hover:bg-primær bg-fourth flex items-center justify-center text-center transition-all"
+          class="hover:bg-primær bg-fourth flex aspect-square items-center justify-center text-center transition-all"
           href="kontakt.html"
           ><h3>KONTAKT</h3></a
         >
@@ -167,9 +172,9 @@
     <section
       id="section-2 om"
       style="background-image: url(../billeder/musikloftet-bygning.jpg)"
-      class="h-[96vh] w-full bg-cover lg:px-16 lg:py-32"
+      class="h-[96vh] w-full bg-cover"
     >
-      <section id="wrapper" class="flex items-center justify-evenly lg:mx-56">
+      <section id="wrapper" class="grid items-center lg:mx-32">
         <!--   <article
           id="billeder"
           class="border-primær h-5/6 w-5/6 grid-cols-2 grid-rows-2 border-2 mix-blend-normal lg:grid"
@@ -190,7 +195,7 @@
             alt=""
           />
         </article> -->
-        <article id="om" class="ml-32">
+        <article id="om" class="mx-4 my-12 lg:mx-36 lg:ml-32">
           <article id="par-1" class="lg:my-10 lg:mx-32">
             <h2>Om musikloftet</h2>
             <p>
@@ -215,9 +220,9 @@
         </article>
       </section>
     </section>
-    <section id="section-3 price-table" class="flex justify-between">
+    <section id="section-3 price-table" class="md:flex lg:justify-between">
       <table
-        class="bg-primær flex h-[96vh] w-1/3 flex-col items-center justify-evenly md:p-20 lg:p-32"
+        class="bg-primær flex aspect-square flex-col items-center justify-center px-4 md:w-1/3 md:justify-between md:p-4 lg:h-[96vh] lg:justify-center lg:px-24 lg:py-12"
       >
         <tr>
           <thead>
@@ -248,7 +253,7 @@
         </tr>
       </table>
       <table
-        class="bg-second flex h-[96vh] w-1/3 flex-col items-center justify-evenly md:p-12 lg:p-20"
+        class="bg-second flex aspect-square flex-col items-center justify-center px-4 md:w-1/3 md:justify-between md:p-4 lg:h-[96vh] lg:justify-center lg:px-24 lg:py-12"
       >
         <tr>
           <thead>
@@ -279,7 +284,7 @@
         </tr>
       </table>
       <table
-        class="bg-fifth flex h-[96vh] w-1/3 flex-col items-center justify-evenly md:p-20 lg:p-32"
+        class="bg-fifth flex aspect-square flex-col items-center justify-center px-4 md:w-1/3 md:justify-between md:p-4 lg:h-[96vh] lg:justify-center lg:px-24 lg:py-12"
       >
         <tr>
           <thead>
