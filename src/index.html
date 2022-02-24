@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,9 +17,10 @@
       rel="stylesheet"
     />
   </head>
-
   <header>
-    <nav class="bg-second sticky flex items-center justify-between px-5 py-2">
+    <nav
+      class="fixed flex w-full items-center justify-between px-4 py-2 transition-all duration-300 ease-out"
+    >
       <!-- Logo -->
       <div class="z-10">
         <h3 class="">
@@ -64,13 +65,13 @@
       <!-- Burger menu streger -->
       <div id="hamburger" class="hamburger group z-10">
         <div
-          class="bar group-hover:bg-six my-1 h-1 w-8 bg-white transition"
+          class="bar group-hover:bg-primær my-1 h-1 w-8 rounded-full bg-white transition"
         ></div>
         <div
-          class="bar group-hover:bg-six my-1 h-1 w-8 bg-white transition"
+          class="bar group-hover:bg-primær my-1 h-1 w-8 rounded-full bg-white transition"
         ></div>
         <div
-          class="bar group-hover:bg-six my-1 h-1 w-8 bg-white transition"
+          class="bar group-hover:bg-primær my-1 h-1 w-8 rounded-full bg-white transition"
         ></div>
       </div>
       <!-- Burger links -->
@@ -114,85 +115,278 @@
       </div>
     </nav>
   </header>
-
-  <body>
-    <div
-      class="card bg-primary text-primary-content file: m-1 w-96 rounded-none"
+  <main>
+    <section
+      id="section-1 hero"
+      class="h-[96vh] w-auto grid-cols-2 lg:grid lg:h-5/6"
     >
-      <div class="card-body">
-        <h2 class="card-title">Card title!</h2>
-        <p>If a dog chews shoes whose shoes does he choose?</p>
-        <div class="card-actions justify-end">
-          <button class="btn">Buy Now</button>
+      <article
+        id="splash-billede"
+        style="background-image: url(../billeder/splash-billede.jpg)"
+        class="col-start-1 grid aspect-square h-full w-full grid-rows-3 items-center justify-center bg-cover sm:w-full"
+      >
+        <div id="h1-h3" class="row-start-2 mx-4">
+          <h1>MUSIKLOFTET</h1>
+          <h4 class="ml-1">
+            <span class="text-six">Leje af øvelokaler</span> til bands, solister
+            og musiklærer
+          </h4>
+          <button
+            class="bg-third hover:bg-six my-6 rounded-xl px-6 py-4 transition-all lg:hidden"
+          >
+            <a href="lokaler.html">SE LOKALERNE</a>
+          </button>
         </div>
+      </article>
+      <article
+        id="nav-boxe-grid"
+        class="hidden h-full grid-cols-2 grid-rows-2 md:hidden lg:grid"
+      >
+        <a
+          class="hover:bg-primær bg-third flex aspect-square items-center justify-center text-center transition-all"
+          href="lokaler.html"
+          ><h3>LOKALERNE</h3></a
+        >
+
+        <div id="rock" class="bg-six grid aspect-square">
+          <img
+            class="self-center justify-self-center"
+            src="../billeder/gif/speaker.gif"
+            alt="Guitar forstærker"
+          />
+        </div>
+
+        <a
+          class="hover:bg-primær bg-fifth flex aspect-square items-center justify-center text-center transition-all"
+          href="faq.html"
+          ><h3>FAQ</h3></a
+        >
+
+        <a
+          class="hover:bg-primær bg-fourth flex aspect-square items-center justify-center text-center transition-all"
+          href="kontakt.html"
+          ><h3>KONTAKT</h3></a
+        >
+      </article>
+    </section>
+    <section
+      id="section-2 om"
+      style="background-image: url(../billeder/musikloftet-bygning.jpg)"
+      class="h-[96vh] w-full bg-cover"
+    >
+      <section id="wrapper" class="grid items-center lg:mx-32">
+        <!--   <article
+          id="billeder"
+          class="border-primær h-5/6 w-5/6 grid-cols-2 grid-rows-2 border-2 mix-blend-normal lg:grid"
+        >
+          <img
+            class="aspect-square object-cover"
+            src="../billeder/fotos/store lokaler/stort-lokale-2.jpg"
+            alt=""
+          />
+          <img
+            class="aspect-square object-cover"
+            src="../billeder/fotos/lille lokale/lille lokale.jpg"
+            alt=""
+          />
+          <img
+            class="col-span-2 aspect-[10/5] object-cover"
+            src="../billeder/fotos/mellem lokaler/mellem-lokale-band-3.jpg"
+            alt=""
+          />
+        </article> -->
+        <article id="om" class="mx-4 my-12 lg:mx-36 lg:ml-32">
+          <article id="par-1" class="lg:my-10 lg:mx-32">
+            <h2>Om musikloftet</h2>
+            <p>
+              Musikloftet er 8 hyggelige øvelokaler på toppen af Prøvestenen i
+              København. Øvelokalerne ligger i en gammel industribygning, som
+              huser både kreative værksteder, atelierer og fotostudier.
+            </p>
+          </article>
+          <article id="par-2" class="lg:my-10 lg:mx-32">
+            <h3>Etableret i 2008</h3>
+            <p>
+              Øvelokalerne blev etableret i 2018 med den tanke at det skal være
+              let at finde og dele et øvelokale. De fleste bands øver kun én
+              gang om ugen, så Musikloftets mål er at gøre det let at dele sit
+              øvelokale med andre: Vi har udelukkende baggearslokaler udstyret
+              med alt det tunge/besværlige udstyr: Trommer, forstærkere og
+              PA-anlæg. Så som band/orkester gælder det bare om at tage guitaren
+              eller bassen over skulderen, og komme fast én dag om ugen. God
+              spillelyst!
+            </p>
+          </article>
+        </article>
+      </section>
+    </section>
+    <section id="section-3 price-table" class="md:flex lg:justify-between">
+      <table
+        class="bg-primær flex aspect-square flex-col items-center justify-center px-4 md:w-1/3 md:justify-between md:p-4 lg:h-[96vh] lg:justify-center lg:px-12 lg:py-12"
+      >
+        <tr>
+          <thead>
+            <th><h3>Lille lokale</h3></th>
+          </thead>
+        </tr>
+        <tr>
+          <td class="">
+            Det lille lokale er ca. 10m2, og er oplagt for små bands/orkestre,
+            der ikke har en trommeslager
+          </td>
+        </tr>
+        <tr>
+          <td class="py-10">
+            Det lille lokale koster
+            <span class="font-bold">300 dkk/måned</span> for tre timer én dag om
+            ugen.
+          </td>
+        </tr>
+        <tr>
+          <td class="flex justify-center">
+            <button
+              class="bg-third hover:bg-six rounded-xl px-6 py-4 transition-all"
+            >
+              <a href="lille_lokale.html">LÆS MERE</a>
+            </button>
+          </td>
+        </tr>
+      </table>
+      <table
+        class="bg-second flex aspect-square flex-col items-center justify-center px-4 md:w-1/3 md:justify-between md:p-4 lg:h-[96vh] lg:justify-center lg:px-12 lg:py-12"
+      >
+        <tr>
+          <thead>
+            <th><h3>Mellem lokale</h3></th>
+          </thead>
+        </tr>
+        <tr>
+          <td class="">
+            De mellemstore lokaler er mellem 16 og 22m2, og er oplagt for mindre
+            rockbands med trommer - typisk tre-fire bandmedlemmer.
+          </td>
+        </tr>
+        <tr>
+          <td class="py-10">
+            Et mellem lokale koster
+            <span class="font-bold">500 dkk/måned</span> for tre timer én dag om
+            ugen.
+          </td>
+        </tr>
+        <tr>
+          <td class="flex justify-center">
+            <button
+              class="bg-third hover:bg-six rounded-xl px-6 py-4 transition-all"
+            >
+              <a href="mellem_lokale.html">LÆS MERE</a>
+            </button>
+          </td>
+        </tr>
+      </table>
+      <table
+        class="bg-fifth flex aspect-square flex-col items-center justify-center px-4 md:w-1/3 md:justify-between md:p-4 lg:h-[96vh] lg:justify-center lg:px-12 lg:py-12"
+      >
+        <tr>
+          <thead>
+            <th><h3>Stort lokale</h3></th>
+          </thead>
+        </tr>
+        <tr>
+          <td class="">
+            De tre store lokaler er mellem 33 og 36m2, så her er der plads til
+            det helt store funk-band, og så er der også en lille lounge-afdeling
+            til at tage en chiller.
+          </td>
+        </tr>
+        <tr>
+          <td class="py-10">
+            Det store lokale koster
+            <span class="font-bold">800 dkk/måned</span> for tre timer én dag om
+            ugen.
+          </td>
+        </tr>
+        <tr>
+          <td class="flex justify-center">
+            <button
+              class="bg-third hover:bg-six rounded-xl px-6 py-4 transition-all"
+            >
+              <a href="stor_lokale.html">LÆS MERE</a>
+            </button>
+          </td>
+        </tr>
+      </table>
+    </section>
+    <audio id="audio">
+      <source src="../lyde/guitar-solo-5999.mp3" type="audio/mpeg" />
+    </audio>
+  </main>
+  <footer
+    class="bg-second grid grid-cols-1 pb-6 text-white md:grid-cols-3 md:grid-rows-2"
+  >
+    <div
+      class="flex flex-col place-content-center justify-self-center text-center"
+    >
+      <div class="pt-8 md:col-start-1 md:row-start-1">
+        <div>
+          <h3 class="pb-6 font-medium">MUSIKLOFTET</h3>
+        </div>
+        <div class="flex place-content-center">
+          <img
+            src="icons/Musikloftet_logo4_symbol.svg"
+            alt=""
+            class="w-5/6"
+            place
+            self
+            bottom
+            center
+            align
+            width="100"
+          />
+        </div>
+      </div>
+
+      <div class="md:col-start-1 md:row-start-2">
+        <p class="pb-2 pt-2">Info@musikloftet.dk</p>
+        <p class="">Tlf: 22555512</p>
+      </div>
+    </div>
+    <div
+      class="flex flex-col place-content-center justify-self-center text-center md:col-start-3 md:-mt-16"
+    >
+      <div>
+        <h3 class="pb-6 font-medium">FIND OS HER</h3>
+        <p class="pb-2 pt-2">Bastionvej 2, Prøvestenen</p>
+        <p class="pb-2 pt-2">2300KBH S</p>
+      </div>
+    </div>
+    <div
+      class="flex flex-col place-content-center justify-self-center text-center md:col-start-3 md:row-start-2 md:mr-2 md:h-60 md:w-64 lg:h-auto lg:w-auto"
+    >
+      <div class="flex place-content-center overflow-hidden">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.789865873202!2d12.63501851565175!3d55.67525418053272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4653acdabace6295%3A0xd7a81ca67cfb7f60!2sBastionvej%202%2C%202300%20K%C3%B8benhavn!5e0!3m2!1sda!2sdk!4v1645543564014!5m2!1sda!2sdk"
+          width="350"
+          height="250"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          class="scale-75 lg:scale-100"
+        ></iframe>
       </div>
     </div>
 
-    <footer
-      class="bg-second grid grid-cols-1 pb-6 text-white md:grid-cols-3 md:grid-rows-2"
-    >
+    <div class="flex place-content-center">
       <div
-        class="flex flex-col place-content-center justify-self-center text-center"
+        class="flex flex-row justify-center md:col-start-1 md:row-start-2 md:items-end"
       >
-        <div class="pt-8 md:col-start-1 md:row-start-1">
-          <div>
-            <h3 class="pb-6 font-medium">MUSIKLOFTET</h3>
-          </div>
-          <div class="flex place-content-center">
-            <img
-              src="icons/Musikloftet_logo4_symbol.svg"
-              alt=""
-              class="w-5/6"
-              place
-              self
-              bottom
-              center
-              align
-              width="100"
-            />
-          </div>
-        </div>
+        <img src="icons/FacebookNegative.svg" alt="" class="p-4" />
+        <img src="icons/InstagramNegative.svg" alt="" class="p-4" />
+        <img src="icons/YouTubeNegative.svg" alt="" class="p-4" />
+      </div>
+    </div>
+  </footer>
 
-        <div class="md:col-start-1 md:row-start-2">
-          <p class="pb-2 pt-2">Info@musikloftet.dk</p>
-          <p class="">Tlf: 22555512</p>
-        </div>
-      </div>
-      <div
-        class="flex flex-col place-content-center justify-self-center text-center md:col-start-3 md:-mt-16"
-      >
-        <div>
-          <h3 class="pb-6 font-medium">FIND OS HER</h3>
-          <p class="pb-2 pt-2">Bastionvej 2, Prøvestenen</p>
-          <p class="pb-2 pt-2">2300KBH S</p>
-        </div>
-      </div>
-      <div
-        class="flex flex-col place-content-center justify-self-center text-center md:col-start-3 md:row-start-2 md:mr-2 md:h-60 md:w-64 lg:h-auto lg:w-auto"
-      >
-        <div class="flex place-content-center overflow-hidden">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.789865873202!2d12.63501851565175!3d55.67525418053272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4653acdabace6295%3A0xd7a81ca67cfb7f60!2sBastionvej%202%2C%202300%20K%C3%B8benhavn!5e0!3m2!1sda!2sdk!4v1645543564014!5m2!1sda!2sdk"
-            width="350"
-            height="250"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            class="scale-75 lg:scale-100"
-          ></iframe>
-        </div>
-      </div>
-
-      <div class="flex place-content-center">
-        <div
-          class="flex flex-row justify-center md:col-start-1 md:row-start-2 md:items-end"
-        >
-          <img src="icons/FacebookNegative.svg" alt="" class="p-4" />
-          <img src="icons/InstagramNegative.svg" alt="" class="p-4" />
-          <img src="icons/YouTubeNegative.svg" alt="" class="p-4" />
-        </div>
-      </div>
-    </footer>
+  <body>
     <script type="module" src="index.js"></script>
   </body>
 </html>
