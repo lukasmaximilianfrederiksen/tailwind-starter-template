@@ -35,7 +35,7 @@ function showHeader() {
 
 function spilLyd() {
   lydGif.play();
-  lydGif.volume = 0.2;
+  lydGif.volume = 0.1;
 }
 
 function stopLyd() {
