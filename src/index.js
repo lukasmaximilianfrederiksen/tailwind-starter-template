@@ -1,3 +1,5 @@
+import "flowbite";
+
 const burger = document.querySelector("nav .hamburger");
 const burgerContent = document.querySelector("nav .burger-content");
 
