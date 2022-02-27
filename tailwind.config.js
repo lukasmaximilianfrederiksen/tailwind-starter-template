@@ -5,6 +5,10 @@ module.exports = {
   content: ["./src/**/*.{html,js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      cursor: {
+        guitar: "url(icons/gitar.cur), pointer",
+      },
+
       colors: {
         // mørke lilla
         primær: "#381460",
@@ -20,10 +24,6 @@ module.exports = {
         fifth: "#FF6363",
         // gul
         six: "#FFBD69",
-      },
-
-      cursor: {
-        guitar: "url(icons/g_1.png), pointer",
       },
     },
   },
