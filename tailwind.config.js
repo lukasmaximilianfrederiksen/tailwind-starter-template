@@ -21,10 +21,9 @@ module.exports = {
         // gul
         six: "#FFBD69",
       },
-      spacing: {
-        height: {
-          128: "32rem",
-        },
+
+      cursor: {
+        guitar: "url(icons/g_1.png), pointer",
       },
     },
   },
