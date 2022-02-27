@@ -19,7 +19,7 @@
   </head>
   <header>
     <nav
-      class="bg-second sticky z-10 flex items-center justify-between px-5 py-2"
+      class="fixed z-10 flex w-full items-center justify-between px-4 py-2 transition-all duration-300 ease-out"
     >
       <!-- Logo -->
       <div class="z-10">
@@ -65,13 +65,13 @@
       <!-- Burger menu streger -->
       <div id="hamburger" class="hamburger group z-10">
         <div
-          class="bar group-hover:bg-six my-1 h-1 w-8 bg-white transition"
+          class="bar group-hover:bg-primær my-1 h-1 w-8 rounded-full bg-white transition"
         ></div>
         <div
-          class="bar group-hover:bg-six my-1 h-1 w-8 bg-white transition"
+          class="bar group-hover:bg-primær my-1 h-1 w-8 rounded-full bg-white transition"
         ></div>
         <div
-          class="bar group-hover:bg-six my-1 h-1 w-8 bg-white transition"
+          class="bar group-hover:bg-primær my-1 h-1 w-8 rounded-full bg-white transition"
         ></div>
       </div>
       <!-- Burger links -->
@@ -119,16 +119,25 @@
   <!------------- Body  Section----------------->
   <body>
     <section class="grid-cols-2 lg:grid">
+      <form>
+       
       <section
         class="grid aspect-auto h-screen w-full bg-cover bg-center"
-        style="background-image: url(icons/treUngeBand.jpg)"
-      >
+        style="background-image: url(icons/treUngeBand.jpg)" >
+        
+        <div class="grid  justify-self-start m-4">
+        <form >
+ <input class=" bg-third hover:bg-six rounded-xl  transition-all mb-36 mt-24 px-4 lg:p-4" type="button" value="Tilbage" onclick="history.back()">
+</form>
+</div>
         <div
           class="px-auto mx-auto mt-16 flex items-center justify-between md:flex"
         >
-          <div class="flex flex-nowrap md:flex-nowrap">
+
+          <div class="pb-48 flex flex-nowrap md:flex-nowrap">
+         
             <div class="-mt-2 block lg:flex lg:flex-wrap">
-              <h1 class="p-4 font-bold md:-mt-4 md:text-9xl">Mellem</h1>
+              <h1 class="p-4 font-bold md:-mt-4 md:text-9xl">Lille</h1>
               <h1 class="-mt-16 p-4 font-bold md:-mt-4 md:text-9xl">Lokaler</h1>
             </div>
           </div>
@@ -138,7 +147,7 @@
         class="bg-kalender flex flex-col flex-nowrap items-center justify-center md:flex-row"
       >
         <div class="mt-10 text-center md:mt-0 md:ml-10 md:mr-10"></div>
-        <div class="bg-kalender lg:ml-40">
+        <div class="bg-kalender ">
           <h2>Book lokale</h2>
           <div class="items-center justify-center py-8 px-4 md:flex">
             <div class="max-w-md shadow-lg">
