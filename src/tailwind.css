@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    color: white;
+  }
   h1 {
     font-family: "Roboto", cursive;
     font-size: 4.6rem;
