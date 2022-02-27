@@ -133,26 +133,40 @@
           </svg>
         </div>
       </div>
-    <section
-      class="flex aspect-auto w-full flex-wrap bg-cover bg-center bg-no-repeat md:h-screen"
-      style="background-image: url(icons/treUngeBand.jpg)"
-    >
-      <div
-        class="px-auto mx-auto mt-16 flex h-[30rem] w-full items-center justify-center md:flex md:w-1/2"
+    <section class="grid-cols-2 lg:grid">
+      <section
+        class="grid aspect-auto h-screen w-full bg-cover bg-center"
+        style="background-image: url(icons/treUngeBand.jpg)"
       >
-        <div class="flex flex-nowrap md:flex-nowrap">
-          <div class="-mt-2 block justify-center lg:flex lg:flex-wrap">
-            <h1 class="p-4 font-bold lg:-mt-4 lg:text-9xl">Store</h1>
-            <h1 class="-mt-16 p-4 font-bold lg:-mt-4 lg:text-9xl">Lokaler</h1>
+        <div class="m-4 grid justify-self-start">
+          <form>
+            <input
+              class="bg-third hover:bg-six mb-36 mt-24 rounded-xl px-5 py-2 transition-all lg:p-2"
+              type="button"
+              value="Tilbage"
+              onclick="history.back()"
+            />
+          </form>
+        </div>
+        <div
+          class="px-auto mx-auto mt-16 flex items-center justify-between md:flex"
+        >
+          <div class="flex flex-nowrap pb-48 md:flex-nowrap">
+            <div class="-mt-2 block lg:flex lg:flex-wrap">
+              <h1 class="p-4 font-bold md:-mt-4 md:text-9xl">Store</h1>
+              <h1 class="-mt-16 p-4 font-bold md:-mt-4 md:text-9xl">Lokaler</h1>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
       <div
-        class="bg-kalender flex w-full flex-col flex-nowrap items-center justify-center md:w-1/2 md:flex-row"
+        class="bg-kalender flex flex-col flex-nowrap items-center justify-center md:flex-row"
       >
+        <div class="mt-10 text-center md:mt-0 md:ml-10 md:mr-10"></div>
         <div class="bg-kalender">
+          <h2 class="pl-12">Book lokale</h2>
           <div class="items-center justify-center py-8 px-4 md:flex">
-            <div class="max-w-xs shadow-lg">
+            <div class="max-w-md shadow-lg">
               <div class="bg-kalender rounded-t p-5 md:p-8">
                 <div class="flex items-center justify-between px-4">
                   <span
@@ -543,13 +557,12 @@
         <div class="m-14 flex flex-col">
           <h2>Om lokalet</h2>
           <p class="max-w-lg pt-8">
-            Det lille lokale er ca. 10m2, og er oplagt for små bands/orkestre,
-            der ikke har en trommeslager
+            De tre store lokaler er mellem 33 og 36m2, så her er der plads til det helt store funk-band, og så er der også en lille lounge-afdeling til at tage en chiller 
+
+
           </p>
           <p class="max-w-lg pt-4">
-            Det lille lokale koster 300 dkk/måned for tre timer én dag om ugen,
-            og bindingsperioden for leje af et lokale er løbende måned + 30
-            dage. Se ledige tider i tabellen nedenfor.
+            Et stort lokale koster 800/måned for tre timer én dag om ugen, og bindingsperioden for leje af et lokale er løbende måned + 30 dage. Se ledige tider i tabellen nedenfor
           </p>
         </div>
       </div>
