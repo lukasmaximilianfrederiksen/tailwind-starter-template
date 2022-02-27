@@ -524,43 +524,97 @@
     </div>
 
     <div
-      class="md:flex-no-wrap flex w-full flex-wrap items-center justify-between"
+      class="md:flex-no-wrap flex w-full flex-wrap items-center justify-between align-middle"
     >
       <div
-        class="bg-fifth h-[30rem] w-full rounded-t shadow sm:rounded-l sm:rounded-t-none md:w-1/2"
+        class="bg-fifth flex h-[30rem] w-full justify-center rounded-t align-middle shadow sm:rounded-l sm:rounded-t-none md:w-1/2"
       >
-        <div
-          class="flex max-w-md flex-col pt-14 pl-8 pb-14 pr-16 md:max-w-none"
-        >
+        <div class="m-14 flex flex-col">
           <h2>Om lokalet</h2>
-          <p class="pt-8">
+          <p class="max-w-lg pt-8">
             Det lille lokale er ca. 10m2, og er oplagt for små bands/orkestre,
             der ikke har en trommeslager
           </p>
-          <p class="pt-4">
+          <p class="max-w-lg pt-4">
             Det lille lokale koster 300 dkk/måned for tre timer én dag om ugen,
             og bindingsperioden for leje af et lokale er løbende måned + 30
             dage. Se ledige tider i tabellen nedenfor.
           </p>
         </div>
       </div>
-      <div class="bg-primær h-[30rem] w-full shadow md:w-1/2">
-        <div class="flex flex-col place-content-center self-center pt-14 pb-14">
+      <div
+        class="bg-third flex h-[30rem] w-full flex-col items-center align-middle shadow md:w-1/2"
+      >
+        <div class="m-14">
           <div>
-            <h2 class="mb-10">Lokalet er udstyret med:</h2>
+            <h2 class="mb-8">Lokalet er udstyret med:</h2>
           </div>
           <ul class="list-none text-white">
-            <li>● 3 stk. Bronco Deville 4X10 Guitarcombo</li>
-            <li>● Snorx AC60C2 Basscombo</li>
-            <li>● Korka 12-kanals sanganlæg</li>
-            <li>● Mooga 6 oktavers keyboard</li>
-            <li>● 4 stk Castafiore vokalmikrofoner på stativ</li>
-            <li>● Pro Drums Funk trommesæt med Zhiltan Pro bækkener</li>
-            <li>● 18-spors Beckeringer mixer</li>
+            <li class="pb-2">● 3 stk. Bronco Deville 4X10 Guitarcombo</li>
+            <li class="pb-2">● Snorx AC60C2 Basscombo</li>
+            <li class="pb-2">● Korka 12-kanals sanganlæg</li>
+            <li class="pb-2">● Mooga 6 oktavers keyboard</li>
+            <li class="pb-2">● 4 stk Castafiore vokalmikrofoner på stativ</li>
+            <li class="pb-2">
+              ● Pro Drums Funk trommesæt med Zhiltan Pro bækkener
+            </li>
+            <li class="pb-2">● 18-spors Beckeringer mixer</li>
           </ul>
         </div>
       </div>
     </div>
+
+    <section id="faq-indhold" class="bg-primær col-span-3 col-start-2 p-10">
+      <div class="mx-4">
+        <h1 class="pb-10 leading-snug">Praktiske informationer</h1>
+        <section
+          id="regler"
+          class="grid-cols-2 grid-rows-3 flex-col lg:grid lg:gap-4"
+        >
+          <article class="my-6">
+            <h4>Parkering</h4>
+            <p>Der er gratis parkeringspladser til biler og cykler.</p>
+          </article>
+          <article class="my-6">
+            <h4>Åbningstider</h4>
+            <p>
+              Øvelokalerne er åbne dagligt fra 9-24 - en vagt sørger for at
+              lukke lokalerne kort efter midnat hver dag.
+            </p>
+          </article>
+          <article class="my-6">
+            <h4>Alarmsystem</h4>
+            <p>
+              Der er både elektronisk låsesystem, alarm og videoovervågning for
+              at passe på vores lokaler - se lejekontrakten og velkomstmailen
+              for yderligere info.
+            </p>
+          </article>
+          <article class="my-6">
+            <h4>Gæster</h4>
+            <p>
+              Du må gerne have gæster med i øvelokalet, men du bærer ansvaret
+              for at dine gæster opfører sig i henhold til Musikloftets husorden
+            </p>
+          </article>
+          <article class="my-6">
+            <h4>Rengøring</h4>
+            <p>
+              Der bliver rengjort dagligt om morgenen, både i øvelokaler og
+              fælleslokaler - men ryd op efter dig selv og sørg for at holde
+              lokalerne pæne, så de også er rene for dem der spiller om aftenen!
+            </p>
+          </article>
+          <article class="mt-6">
+            <h4>Rygning/alkohol</h4>
+            <p>
+              Der må ikke ryges i øvelokalerne - men du er velkommen til at ryge
+              på tagterassen Indtagelse af alkohol kun på forsvarlig vis
+            </p>
+          </article>
+        </section>
+      </div>
+    </section>
 
     <footer
       class="bg-second grid grid-cols-1 pb-6 text-white md:grid-cols-3 md:grid-rows-2"
