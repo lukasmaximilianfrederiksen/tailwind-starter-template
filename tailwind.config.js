@@ -1,4 +1,5 @@
 const { secondary } = require("daisyui/src/colors");
+const { spacing } = require("tailwindcss/defaultTheme");
 
 module.exports = {
   content: ["./src/**/*.{html,js,ts,jsx,tsx}"],
@@ -19,6 +20,11 @@ module.exports = {
         fifth: "#FF6363",
         // gul
         six: "#FFBD69",
+      },
+      spacing: {
+        height: {
+          128: "32rem",
+        },
       },
     },
   },
