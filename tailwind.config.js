@@ -20,6 +20,9 @@ module.exports = {
         // gul
         six: "#FFBD69",
       },
+      cursor: {
+        guitar: "url(icons/g_1.png), pointer",
+      },
     },
   },
   plugins: [
