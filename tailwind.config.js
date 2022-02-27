@@ -24,14 +24,8 @@ module.exports = {
 
       cursor: {
         guitar: "url(icons/g_1.png), pointer",
-      }
-      
-      spacing: {
-        height: {
-          128: "32rem",
-        },
       },
-    }
+    },
   },
   plugins: [
     require("@tailwindcss/typography"),
