@@ -1,4 +1,5 @@
 const { secondary } = require("daisyui/src/colors");
+const { spacing } = require("tailwindcss/defaultTheme");
 
 module.exports = {
   content: ["./src/**/*.{html,js,ts,jsx,tsx}"],
@@ -20,10 +21,17 @@ module.exports = {
         // gul
         six: "#FFBD69",
       },
+
       cursor: {
         guitar: "url(icons/g_1.png), pointer",
+      }
+      
+      spacing: {
+        height: {
+          128: "32rem",
+        },
       },
-    },
+    }
   },
   plugins: [
     require("@tailwindcss/typography"),
